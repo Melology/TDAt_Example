@@ -1,6 +1,6 @@
 
 import numpy as np
-import galois_example
+import galois
 
 #Taking the number of rows and columns from user
 

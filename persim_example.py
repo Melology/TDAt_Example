@@ -1,4 +1,4 @@
-import numpy as np
+
 import persim
 import tadasets
 import ripser
