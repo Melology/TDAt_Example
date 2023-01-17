@@ -1,11 +1,10 @@
-
 import numpy as np
 import galois
 
 #Taking the number of rows and columns from user
 
-n=int(input("Enter the number of Rows\n"))
-m=int(input("Enter the number of Columns\n"))
+n = int(input("Enter the number of Rows\n"))
+m = int(input("Enter the number of Columns\n"))
 
 """
  You can either use this loop method for below list comprehension;
@@ -17,7 +16,7 @@ for i in range(n):
 
 #Creating a Empty matrix as as per the instruction of user;
 
-a = [ [0] * m for i in range(n) ]
+a = [[0] * m for i in range(n)]
 
 
 #Taking the element for a matrix from user;
@@ -27,16 +26,17 @@ for i in range (n):
         print("Enter Element No:",i,j)
         a[i][j] = int(input())
 a = np.array(a)
+
 print(a)
 
 #Creating a galois field Z_2
 
 GF = galois.GF(2)
 
-m= GF(a)
+matrix = GF(a)
 
 #Rank of the vector space
 
-Rank = np.linalg.matrix_rank(m)
+Rank = np.linalg.matrix_rank(matrix)
 
 print(Rank)
