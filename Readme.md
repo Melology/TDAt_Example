@@ -10,4 +10,5 @@ https://ripser.scikit-tda.org/en/latest/index.html#
 (Venv) : 
         numpy
         galois
-        
+
+This is for testing the Venv in  Ubuntu ARM64.

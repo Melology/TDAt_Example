@@ -7,5 +7,4 @@ data = np.random.random((100, 2))
 
 diagrams = rips.fit_transform(data)
 
-rips.plot(diagrams,show=True)
-
+rips.plot(diagrams, show=True)
